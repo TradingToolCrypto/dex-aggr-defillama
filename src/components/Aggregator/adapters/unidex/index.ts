@@ -62,11 +62,11 @@ export async function getQuote(chain: string, from: string, to: string, amount: 
 	const tokenTo = to === ethers.constants.AddressZero ? nativeToken : to;
 	const tokenFrom = isEthflowOrder ? wrappedTokens[chain] : from;
 	const isBuyOrder = extra.amountOut && extra.amountOut !== '0';
-	
+
 	if (isEthflowOrder && isBuyOrder) {
 		throw new Error('buy orders from Ether are not allowed');
 	}
-	
+
 	// amount should include decimals
 	const data = await fetch(`${chainToId[chain]}/api/v1/quote`, {
 		method: 'POST',

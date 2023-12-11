@@ -6,6 +6,11 @@ import { getSandwichList } from '~/props/getSandwichList';
 import { getTokenList } from '~/props/getTokenList';
 import { getTokensMaps } from '~/props/getTokensMaps';
 
+import 'dotenv/config';
+
+console.log('main: env', process.env.PROJECT_NAME); // remove this after you've confirmed it is working
+console.error('main: env', process.env.PROJECT_NAME); // remove this after you've confirmed it is working
+
 export async function getStaticProps() {
 	const tokenList = await getTokenList();
 	const sandwichList = await getSandwichList();

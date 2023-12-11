@@ -65,7 +65,7 @@ const Route = ({
 }: IRoute) => {
 	const { isApproved } = useTokenApprove(fromToken?.address, price?.tokenApprovalAddress as `0x${string}`, amountFrom);
 
-	if (!price.amountReturned || (Number(gasUsd) === 0 && (name !== 'CowSwap' && name !== 'UniDex'))) return null;
+	if (!price.amountReturned || (Number(gasUsd) === 0 && name !== 'CowSwap' && name !== 'UniDex')) return null;
 
 	const amount = +price.amountReturned / 10 ** +toToken?.decimals;
 

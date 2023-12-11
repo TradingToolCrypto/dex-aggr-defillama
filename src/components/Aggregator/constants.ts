@@ -3,6 +3,7 @@ export const altReferralAddress = '0xa43C3EDe995AA058B68B882c6aF16863F18c5330';
 
 export const chainsMap = {
 	ethereum: 1,
+	europa: 2046399126,
 	bsc: 56,
 	polygon: 137,
 	optimism: 10,
@@ -30,6 +31,7 @@ export const chainsMap = {
 
 export const geckoChainsMap: Record<string, typeof chainsMap[keyof typeof chainsMap]> = {
 	ethereum: 1,
+	europa: 2046399126,
 	'binance-smart-chain': 56,
 	'polygon-pos': 137,
 	'optimistic-ethereum': 10,
@@ -57,6 +59,7 @@ export const geckoChainsMap: Record<string, typeof chainsMap[keyof typeof chains
 
 export const chainGasToken: Record<keyof typeof chainsMap, string> = {
 	ethereum: 'ethereum',
+	europa: 'sfuel',
 	bsc: 'binancecoin',
 	polygon: 'matic-network',
 	optimism: 'ethereum',

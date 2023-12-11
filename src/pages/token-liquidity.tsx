@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useRouter } from 'next/router';
-import { Flex, FormControl, FormLabel, Heading, IconButton } from '@chakra-ui/react';
+import { Flex, FormControl, FormLabel, Heading, IconButton, Link } from '@chakra-ui/react';
 import Layout from '~/layout';
 import { chainsMap } from '~/components/Aggregator/constants';
 import ReactSelect from '~/components/MultiSelect';
@@ -72,6 +72,7 @@ export default function TokenLiquidity({ tokenlist }) {
 	return (
 		<Layout title={`Token Liquidity - LlamaSwap`} defaultSEO>
 			<Heading alignSelf="center">Token Liquidity</Heading>
+			<Link href="/">Home</Link>
 
 			<Flex flexDir="column" gap="20px" marginTop="40px" maxW="48rem" w="100%" marginX="auto">
 				<FormControl display="flex" flexDirection="column" justifyContent={'center'}>

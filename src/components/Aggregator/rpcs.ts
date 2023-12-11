@@ -28,6 +28,9 @@ function createProvider(name: string, defaultRpc: string, chainId: number, rando
 }
 
 export const rpcUrls = {
+	2046399126: {
+		default: 'https://mainnet.skalenodes.com/v1/elated-tan-skat'
+	},
 	1: {
 		default: 'https://eth.llamarpc.com',
 		ankr: 'https://rpc.ankr.com/eth',
@@ -99,7 +102,7 @@ export const rpcUrls = {
 		onerpc: 'https://1rpc.io/op',
 		mainnet: 'https://mainnet.optimism.io',
 		blockpi: 'https://optimism.blockpi.network/v1/rpc/public',
-		omniatech: 'https://endpoints.omniatech.io/v1/op/mainnet/public',
+		omniatech: 'https://endpoints.omniatech.io/v1/op/mainnet/public'
 	},
 	42161: {
 		default: 'https://arbitrum-one.blastapi.io/cfee5a54-245d-411b-ba94-da15d5437e88',
@@ -261,6 +264,7 @@ const getUrls = (chainId: keyof typeof rpcUrls) => Object.values(rpcUrls[chainId
 
 export const providers = {
 	ethereum: createProvider('ethereum', getUrls(1), 1),
+	europa: createProvider('europa', getUrls(2046399126), 2046399126),
 	bsc: createProvider('bsc', getUrls(56), 56),
 	polygon: createProvider('polygon', getUrls(137), 137),
 	heco: createProvider('heco', getUrls(128), 128),

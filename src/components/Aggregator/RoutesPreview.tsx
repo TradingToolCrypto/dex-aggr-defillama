@@ -3,6 +3,15 @@ import { Box, Flex, Heading, Link, Text } from '@chakra-ui/react';
 import styled from 'styled-components';
 import { AggIcons, LlamaIcon, SmolCheck } from '../Icons';
 
+//import 'dotenv/config';
+
+const projectName0 = process.env.PROJECT_NAME;
+const projectName1 = process.env.PROJECT_NAME1;
+const projectName2 = process.env.PROJECT_NAME2;
+const projectName3 = process.env.PROJECT_NAME3;
+
+const projectName = projectName0;
+
 const IconsBody = styled.div`
 	display: flex;
 	width: fit-content;
@@ -73,7 +82,7 @@ const RoutesPreview = () => {
 			</Header>
 			<Box zIndex={1}>
 				<Heading size={'md'} textAlign="center" mt={'4'}>
-					The Aggregator of Aggregators
+					DEX Aggregator
 				</Heading>
 				<CheckBody>
 					<CheckWithText text="Totally Free" />
@@ -82,11 +91,11 @@ const RoutesPreview = () => {
 				</CheckBody>
 
 				<Text color={'gray.300'} textAlign="center" mt={6}>
-					LlamaSwap looks for the best route for your trade <br /> among a variety of Dex Aggregators, guaranteeing you{' '}
-					<br /> the best execution prices in DeFi.
-					<br /> <br /> Try it now or{' '}
+					{projectName} looks for the best route for your trade <br /> among a variety of Dex Aggregators, guaranteeing
+					you <br /> the best execution prices in DeFi.
+					<br /> <br />
 					<Link href="https://twitter.com/defillama/status/1609989799653285888" isExternal textDecoration={'underline'}>
-						learn more
+						Learn more
 						<ExternalLinkIcon mx="4px" mb="3px" />
 					</Link>
 				</Text>

@@ -103,7 +103,10 @@ export async function testAdapters(addTest: (test: any) => void) {
 														...extra
 													});
 												}
-												if (Number(price.estimatedGas) < 1000 && (adapter.name === 'CowSwap' || adapter.name === 'UniDex')) {
+												if (
+													Number(price.estimatedGas) < 1000 &&
+													(adapter.name === 'CowSwap' || adapter.name === 'UniDex')
+												) {
 													addTest({ ...testParams, price, success: 'gas' });
 												}
 												return { price, adapter: adapter.name, testParams };

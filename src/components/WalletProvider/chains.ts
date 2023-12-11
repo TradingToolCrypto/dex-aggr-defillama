@@ -62,6 +62,26 @@ const boba = {
 	testnet: false
 };
 
+const europa = {
+	id: 2046399126,
+	name: 'Europa',
+	network: 'europa',
+	iconUrl: chainIconUrl('polygon'),
+	iconBackground: '#000',
+	nativeCurrency: {
+		decimals: 18,
+		name: 'Sfuel',
+		symbol: 'SFUEL'
+	},
+	rpcUrls: {
+		default: 'https://mainnet.skalenodes.com/v1/elated-tan-skat'
+	},
+	blockExplorers: {
+		default: { name: 'SkaleScan', url: 'https://elated-tan-skat.explorer.mainnet.skalenodes.com/' }
+	},
+	testnet: false
+};
+
 const harmony = {
 	id: 1666600000,
 	name: 'Harmony',
@@ -465,6 +485,7 @@ interface IChain extends Chain {
 }
 
 export const allChains: Array<IChain> = [
+	europa,
 	polygon,
 	binance,
 	oasis,

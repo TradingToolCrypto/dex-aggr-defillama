@@ -10,7 +10,7 @@ interface IReactSelect extends Props {
 const formatOptionLabel = ({ label, ...rest }) => {
 	return (
 		<div style={{ display: 'flex' }}>
-			<div style={{color: '#ccc' }}>
+			<div style={{ color: '#ccc' }}>
 				{rest.logoURI ? (
 					<img
 						src={rest.logoURI}

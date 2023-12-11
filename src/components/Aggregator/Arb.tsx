@@ -31,7 +31,8 @@ import {
 	Alert,
 	AlertIcon,
 	Image,
-	VStack
+	VStack,
+	Link
 } from '@chakra-ui/react';
 import { adaptersNames, swap } from './router';
 import { inifiniteApprovalAllowed } from './list';
@@ -419,7 +420,7 @@ export function AggregatorContainer() {
 			...route,
 			isFailed: gasData?.[route.name]?.isFailed || false,
 			route,
-			gasUsd: gasUsd === 0 && (route.name !== 'CowSwap' && route.name !== 'UniDex') ? 'Unknown' : gasUsd,
+			gasUsd: gasUsd === 0 && route.name !== 'CowSwap' && route.name !== 'UniDex' ? 'Unknown' : gasUsd,
 			amountUsd,
 			amount,
 			netOut,
@@ -871,6 +872,7 @@ export function AggregatorContainer() {
 	return (
 		<Wrapper>
 			<Heading>Arbitrum Airdrop X DefiLlama</Heading>
+			<Link href="/">Home</Link>
 
 			<Text color={'orange.400'} fontSize="16px" mb={'8px'}>
 				To get your txs accepted you need to increase priority fee and max fee in metamask.

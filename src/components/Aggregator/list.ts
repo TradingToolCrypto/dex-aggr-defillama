@@ -6,7 +6,7 @@ import * as kyberswap from './adapters/kyberswap';
 import * as hashflow from './adapters/hashflow';
 import * as openocean from './adapters/openocean';
 import * as paraswap from './adapters/paraswap';
-import * as unidex from "./adapters/unidex";
+import * as unidex from './adapters/unidex';
 // import * as lifi from './adapters/lifi';
 // import * as rango from './adapters/rango';
 
@@ -16,7 +16,19 @@ import * as yieldyak from './adapters/yieldyak';
 import * as llamazip from './adapters/llamazip';
 // import * as krystal from './adapters/krystal'
 
-export const adapters = [matcha, inch, cowswap, openocean, yieldyak, paraswap, firebird, hashflow, llamazip, kyberswap, unidex];
+export const adapters = [
+	matcha,
+	inch,
+	cowswap,
+	openocean,
+	yieldyak,
+	paraswap,
+	firebird,
+	hashflow,
+	llamazip,
+	kyberswap,
+	unidex
+];
 
 export const inifiniteApprovalAllowed = [matcha.name, inch.name, cowswap.name, kyberswap.name, paraswap.name];
 

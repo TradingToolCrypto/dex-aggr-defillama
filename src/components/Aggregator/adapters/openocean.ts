@@ -5,6 +5,7 @@ import { sendTx } from '../utils/sendTx';
 
 export const chainToId = {
 	ethereum: 1,
+	europa: 2046399126,
 	bsc: 56,
 	polygon: 137,
 	optimism: 10,

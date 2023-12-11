@@ -35,6 +35,10 @@ interface SwapEvent {
 }
 
 export const sendSwapEvent = async (event: SwapEvent) => {
+	console.error('Swap Event ', event);
+
+	return;
+
 	const data = await fetch(`https://api.llama.fi/storeAggregatorEvent`, {
 		method: 'POST',
 		body: JSON.stringify(event)
