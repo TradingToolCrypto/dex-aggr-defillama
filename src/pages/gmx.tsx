@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AggregatorContainer } from '~/components/Aggregator/Arb';
+import { AggregatorContainer } from '~/components/Aggregator/Gmx';
 import ConnectButton from '~/components/Aggregator/ConnectButton';
 import Layout from '~/layout';
 

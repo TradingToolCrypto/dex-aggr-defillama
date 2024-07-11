@@ -1,3 +1,8 @@
+blocked by dexscreener 
+functions using their api  
+getSandwichList() 
+getTopTokensByChain()
+
 ### Running the app locally
 
 ```
