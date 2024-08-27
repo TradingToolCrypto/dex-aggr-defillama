@@ -880,10 +880,6 @@ export function AggregatorContainer() {
 					Swap
 				</Link>
 
-				<Link href="https://license.tradingtoolcrypto.com" isExternal padding={"4"} >
-					NFT Drop
-				</Link>
-
 				<Link href="https://github.com/tradingtoolcrypto" isExternal padding={"4"} >
 					Docs
 				</Link>

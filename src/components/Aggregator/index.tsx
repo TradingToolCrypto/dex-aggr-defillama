@@ -846,9 +846,6 @@ export function AggregatorContainer({ tokenList, sandwichList }) {
 				<Link href="https://tradingtoolcrypto.com" isExternal padding={"4"}   >
 					Home
 				</Link>
-				<Link href="https://license.tradingtoolcrypto.com" isExternal padding={"4"} >
-					NFT Drop
-				</Link>
 
 				<Link href="https://github.com/tradingtoolcrypto" isExternal padding={"4"} >
 					Docs

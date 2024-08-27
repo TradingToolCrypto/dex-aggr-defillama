@@ -42,3 +42,8 @@ Fetch Quotes Server API backend `/server`
 https://swap-api.defillama.com/dexAggregatorQuote?protocol=Matcha/0x&chain=polygon&from=0x0000000000000000000000000000000000000000&to=0xb5c064f955d8e7f38fe0460c556a72987494ee17&amount=1000000000000000000
 
 - add project name in .env
+
+## Chart w/ Swap 
+Hardcode pair to swap UI + chart from dexscreener 
+- src/pages/gmx 
+- src/pages/arb 
